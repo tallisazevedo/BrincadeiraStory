@@ -1,0 +1,93 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1, h2 {
+  font-weight: 100;
+  margin: 0 0 20px 0;
+}
+
+button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 10px;
+  font-family: inherit;
+}
+
+button:first-child {
+  background-color: green;
+}
+
+button:nth-child(2) {
+  background-color: red;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+div.gif {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+  }
+
+  button {
+    padding: 8px 20px;
+    font-size: 0.9em;
+    margin: 5px;
+  }
+
+  div.buttons {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  div.gif {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2em;
+  }
+
+  button {
+    padding: 6px 15px;
+    font-size: 0.8em;
+  }
+
+  div.gif {
+    max-width: 200px;
+  }
+}
